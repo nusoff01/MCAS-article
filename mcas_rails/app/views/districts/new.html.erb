@@ -1,0 +1,17 @@
+<h1>Create a new District</h1>
+
+<%= form_for :district, url: districts_path do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :idnumber %><br>
+    <%= f.text_field :idnumber %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

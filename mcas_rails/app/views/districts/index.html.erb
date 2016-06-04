@@ -1,0 +1,15 @@
+<h1>All Districts</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Id Number</th>
+  </tr>
+ 
+  <% @districts.each do |d| %>
+    <tr>
+      <td><%= d.name %></td>
+      <td><%= d.idnumber %></td>
+    </tr>
+  <% end %>
+</table>
